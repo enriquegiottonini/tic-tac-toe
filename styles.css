@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+
+}
+.board {
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 10px;
+
+}
+
+.piece {
+    display: flex;
+    width: 30%;
+    height: 30%;
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.disabledbutton {
+    pointer-events: none;
+}
+
+#reset {
+    font-size: larger;
+}
