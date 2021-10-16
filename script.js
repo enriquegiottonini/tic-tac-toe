@@ -87,21 +87,19 @@ const board = (() => {
         // Check if the board is complete
         for(let i=0; i<9; i++) {
             if (boardLoc[i].innerHTML == "")
-                return "tie";
+                return false;
         }
-        return true;
+        return "tie";
 
     }
 
     const isGameFinished = () => {
         
-        if(checkGameWin() == "tie) {
+        if(checkGameWin() == "tie") {
            displayWinner.innerHTML = "TIE!";
            boardGame.classList.add("disabledbutton");
            }
-           
-
-        if (checkGameWin()) {
+        else if (checkGameWin()) {
 
             if(playerTwo.turn)
                 displayWinner.innerHTML = "Player One Wins";
